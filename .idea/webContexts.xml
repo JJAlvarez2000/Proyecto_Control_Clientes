@@ -3,6 +3,8 @@
   <component name="WebContextManager">
     <option name="state">
       <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente/agregarCliente.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente/editarCliente.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente/listadoClientes.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/paginas/cliente" />
       </map>
     </option>

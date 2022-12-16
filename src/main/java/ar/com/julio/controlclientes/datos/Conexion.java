@@ -14,15 +14,19 @@ public class Conexion {
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "admin";
 
+    private static BasicDataSource dataSource;
+
     //metodo que recupera la informacion de la db
     public static DataSource getDataSource() {
-        BasicDataSource ds = new BasicDataSource();
-        ds.setUrl(JDBC_URL);
-        ds.setUsername(JDBC_USER);
-        ds.setPassword(JDBC_PASSWORD);
-        //tamano inicial de pool de conexiones
-        ds.setInitialSize(50);
-        return ds;
+        if (dataSource == null) {
+            dataSource = new BasicDataSource();
+            dataSource.setUrl(JDBC_URL);
+            dataSource.setUsername(JDBC_USER);
+            dataSource.setPassword(JDBC_PASSWORD);
+            //tamano inicial de pool de conexiones
+            dataSource.setInitialSize(50);
+        }
+        return dataSource;
     }
 
     // metodo para obtener una conexion con la db obtenida a partir del pool de conexiones anterior
